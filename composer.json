@@ -1,0 +1,32 @@
+{
+    "name": "traction/laracord",
+    "description": "A wrapper for the Discord REST API written for Laravel",
+    "type": "library",
+    "license": "ACL",
+    "autoload": {
+        "psr-4": {
+            "Traction\\Laracord\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Martin Sheeks",
+            "email": "martin@traction.codes"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "illuminate/support": "8.*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Traction\\Laracord\\ServiceProvider"
+            ],
+            "aliases": {
+                "Laracord": "Traction\\Laracord\\Facades\\Laracord"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
